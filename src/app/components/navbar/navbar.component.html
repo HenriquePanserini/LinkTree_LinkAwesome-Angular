@@ -1,0 +1,33 @@
+<nav [className]="NavBar">
+    <div [className]="NavContainerOne">
+        <h2>
+            <a href="/" [className]="LinkTitle">LinkAwesome</a>
+        </h2>
+        <form action="/" method="get">
+            <button type="button" [className]="btnSearch" (click)="handleClickSearch()" (mouseenter)="isMouseOver = true" (mouseleave)="isMouseOver = false">
+                <i class="fa fa-search" aria-hidden="true" [ngClass]="{'icon-class-normal': true, 'icon-class-hover': isMouseOver}"></i>
+            </button>
+            <input *ngIf="!isSearch" type="text" [className]="searchBar" name="search" placeholder="Search">
+            <button *ngIf="!isSearch" [className]="btnSubmit" type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <div [className]="NavContainerTwo">
+        <ul>
+            <li>
+                <a [className]="iconRef" href="/facebook">
+                    <i class="fa-brands fa-square-facebook" aria-hidden="true" [ngStyle]="{'color':'white'}"></i>
+                </a>
+            </li>
+            <li>
+                <a [className]="iconRef" href="/instagram">
+                    <i class="fa-brands fa-square-instagram" aria-hidden="true" [ngStyle]="{'color':'white'}"></i>
+                </a>
+            </li>
+            <li>
+                <a [className]="iconRef" href="/twitter">
+                    <i class="fa-brands fa-square-x-twitter" aria-hidden="true" [ngStyle]="{'color':'white'}"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

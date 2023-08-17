@@ -1,0 +1,136 @@
+.nav-bar {
+    margin: 0%;
+    padding: 0.472rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 78.438rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container-one {
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container-two {
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin-left: 0.642rem;
+    margin-right: 1.857rem;
+    margin-top: 0.795rem;
+}
+
+form {
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    margin: 0%;
+    padding: 0%;
+}
+
+.search-bar {
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+    right: 36px;
+    z-index: 2;
+    padding-left: 42px;
+    border: none;
+    border-radius: 100px;
+    height: 37px;
+    width: 1px;
+    transition: 1.35s;
+}
+
+.search-bar:focus, .search-bar:hover {
+    width: 210px;
+    outline: none;
+}
+
+.btn-search {
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+    z-index: 1;
+    border: none !important;
+    border-radius: 100px;
+    height: 37px;
+    width: 37px;
+    background-color: #ff9900;
+    transition: .32s;
+}
+
+.btn-search:hover, .btn-search:focus {
+    background-color: rgb(255, 255, 255);
+}
+
+.btn-submit {
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+    right: 25px;
+    z-index: 3;
+    border: none !important;
+    border-radius: 100px;
+    height: 37px;
+    width: 37px;
+    background-color: #fff;
+}
+
+.link-title {
+    color: aliceblue;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+ul {
+    list-style: none;
+    margin: 0%;
+    margin-right: 0.625rem;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    margin: 0%;
+    padding: 0%;
+}
+
+.icon-ref {
+    margin: 0.655rem;
+    padding: 0%;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.icon-class-normal {
+    color: white;
+    font-size: large;
+}
+
+.icon-class-hover {
+    color: orange;
+    font-size: large;
+}
+

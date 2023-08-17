@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+body {
+    margin: 0rem;
+    padding: 0.18rem;
+    display: flex;
+    flex-direction: column;
+    orientation: landscape;
+    background: #ff9900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+

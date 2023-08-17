@@ -1,0 +1,22 @@
+.header-app {
+    margin: 0rem;
+    padding: 0rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-app {
+    margin: 0rem;
+    padding: 0rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-app {
+    margin: 0rem;
+    padding: 0rem;
+}
+

@@ -1,0 +1,8 @@
+<div [className]="editBios" *ngIf="!editingBios">
+    <span [className]="descriptBios">{{ descricao }}</span>
+    <button [className]="btnEdit" (click)="handleClickEdit()"><i class="fa fa-pencil-square"></i></button>
+</div>
+<div [className]="editBios" *ngIf="editingBios">
+    <input [className]="textEdit" type="text" name="textBios" [(ngModel)]="editedBios"/>
+    <button [className]="btnSave" (click)="handleClickSave()"><i class="fa fa-check"></i></button>
+</div>

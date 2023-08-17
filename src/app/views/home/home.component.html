@@ -1,0 +1,53 @@
+<div [className]="contentHome" [ngStyle]="{'margin-bottom': mb3(16), 'margin-top': mb3(8) }">
+    <section [className]="homePerfil" [ngStyle]="{'margin-bottom': mb3(16), 'margin-top': mb3(8) }">
+        <img [className]="userPhoto" [ngStyle]="{'margin-bottom': mb3(16) }" [src]="imgPage.useImg" alt="foto_perfil">
+        <h1 [className]="userName" [ngStyle]="{'margin-bottom': mb3(16) }">{{CompletedName(nome, sobrenome)}}</h1>
+        <app-bios-editor [ngStyle]="{'margin-bottom': mb3(16) }" [editingBios]="editingBios"></app-bios-editor>
+    </section>
+    <section [className]="linkTree">
+        <ul [ngStyle]="{'margin-bottom': mb3(16) }">
+            <li>
+                <a [href]="{}" aria-hidden="true">
+                    <img [className]="linksBtn" [src]="imgPage.instagramImg" alt="">
+                </a>
+            </li>
+            <li>
+                <a [href]="{}" aria-hidden="true">
+                    <img [className]="linksBtn" [src]="imgPage.facebookImg" alt="">
+                </a>
+            </li>
+            <li>
+                <a [href]="{}" aria-hidden="true">
+                    <img [className]="linksBtn" [src]="imgPage.twitterImg" alt="">
+                </a>
+            </li>
+            <li>
+                <a [href]="{}" aria-hidden="true">
+                    <img [className]="linksBtn" [src]="imgPage.tiktokImg" alt="">
+                </a>
+            </li>
+            <li>
+                <a [href]="{}" aria-hidden="true">
+                    <img [className]="linksBtn" [src]="imgPage.youtubeImg" alt="">
+                </a>
+            </li>
+            <li>
+                <a [href]="{}" aria-hidden="true">
+                    <img [className]="linksBtn" [src]="imgPage.linkedinImg" alt="">
+                </a>
+            </li>
+            <li>
+                <a [href]="{}" aria-hidden="true">
+                    <img [className]="linksBtn" [src]="imgPage.emailImg" alt="">
+                </a>
+            </li>
+        </ul>
+        <form action="/cadastro"  >
+            <button [className]="btnAdd">
+                <a href="/cadastro">
+                    <i class="fa fa-plus"></i>
+                </a>
+            </button>
+        </form>
+    </section>
+</div>
